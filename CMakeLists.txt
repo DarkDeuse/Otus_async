@@ -1,10 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
-if (DEFINED ENV{REALISE_BUILD_NUMBER})
-	project(async VERSION 0.0.$ENV{REALISE_BUILD_NUMBER})
-else()
-	project(async VERSION 99.99.999)
-endif()
+set(PATCH_VERSION "1" CACHE INTERNAL "Patch version")
+set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 
 configure_file(version.h.in version.h)
 
