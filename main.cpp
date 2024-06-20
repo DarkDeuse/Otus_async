@@ -1,6 +1,6 @@
 #include <stdlib.h>
 
-#include "../libs/asyncedLib.h"
+#include "libs/asyncedLib.h"
 
 int main(){
     assyncedLib interp{};
